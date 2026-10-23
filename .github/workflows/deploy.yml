@@ -17,7 +17,7 @@ jobs:
         key: ${{ secrets.SSH_PRIVATE_KEY }}
         port: ${{ secrets.SSH_PORT }}
         script: |
-          cd /root/server/MomSite
+          cd /root/server/MomSite-Server
           git pull origin main
           cd ..
           docker compose down
