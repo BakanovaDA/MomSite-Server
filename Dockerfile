@@ -2,10 +2,10 @@
 FROM node:19-alpine
 
 # указываем рабочую (корневую) директорию
-WORKDIR /app
+WORKDIR /app+
 
 # копируем основные файлы приложения в рабочую директорию
-COPY package.json package-lock.json ./
+COPY package.json ./
 
 # устанавливаем указанные зависимости NPM на этапе установки образа
 RUN npm install
